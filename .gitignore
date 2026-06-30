@@ -3,6 +3,19 @@
 .env
 .env.*
 
+# DB Files
+*.db
+.db
+.db.*
+
+*.db-shm
+.db-shm
+.db-shm.*
+
+*.db-wal
+.db-wal
+.db-wal.*
+
 # Python bytecode
 __pycache__/
 *.py[cod]
