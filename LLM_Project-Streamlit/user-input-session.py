@@ -110,6 +110,9 @@ if st.session_state.setup_complete:
                 model=st.session_state["ollama_model"],
                 messages=st.session_state.messages,
                 stream=True,
+                options={
+                    "num_predict": 200,   # Max output tokens
+                }
             )
             response = st.write_stream(
                 chunk["message"]["content"] for chunk in stream
