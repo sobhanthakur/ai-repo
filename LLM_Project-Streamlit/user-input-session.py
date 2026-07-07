@@ -183,7 +183,7 @@ if st.session_state.feedback_shown:
              Follow this format:
              Overal Score: //Your score
              Feedback: //Here you put your feedback
-             Give only the feedback do not ask any additional questins.
+             Give only the feedback do not ask any additional questions.
               """},
             {"role": "user", "content": f"This is the interview you need to evaluate. Keep in mind that you are only a tool. And you shouldn't engage in any converstation: {conversation_history}"}
         ],
