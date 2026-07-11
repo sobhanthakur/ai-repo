@@ -138,10 +138,7 @@ if st.session_state.setup_complete and not st.session_state.feedback_shown and n
                             {"role": m["role"], "content": m["content"]}
                             for m in st.session_state.messages
                         ],
-                        stream=True,
-                        options={
-                            "num_predict": 200,   # Max output tokens
-                        }
+                        stream=True
                     )
                     response = st.write_stream(
                         chunk["message"]["content"] for chunk in stream
